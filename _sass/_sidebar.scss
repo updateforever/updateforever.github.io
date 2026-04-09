@@ -138,6 +138,8 @@
 
 .author__bio {
   margin: 0;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -234,7 +236,9 @@
   }
 
   li {
-    white-space: nowrap;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
 
   a {
