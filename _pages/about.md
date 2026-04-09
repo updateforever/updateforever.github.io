@@ -8,51 +8,62 @@ redirect_from:
   - /about.html
 ---
 
-{% if site.google_scholar_stats_use_cdn %}
-{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
-{% else %}
-{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
-{% endif %}
-{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
-
 <span class='anchor' id='about-me'></span>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl, porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam. Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
+我是东南大学自动化学院博士研究生王怡沛，目前的研究聚焦于视觉单目标跟踪与多模态大模型认知推理。此前在东南大学仪器科学与工程学院获得工学硕士学位，本科毕业于郑州大学电气工程学院。
 
-My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
+我持续关注复杂视觉场景中的目标身份判别、相似物体干扰分析，以及多模态大模型在垂直任务中的知识迁移与结构化推理能力构建。欢迎通过邮箱与我联系开展学术交流或合作。
 
+<span class='anchor' id='research-interests'></span>
 
-# 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+# 研究方向
 
-# 📝 Publications 
+## 视觉单目标跟踪
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
+重点关注相似物体干扰（Similar Object Interference, SOI）等复杂场景下的核心挑战，系统分析其对跟踪稳定性的影响机理。在此基础上，探索从传统“感知驱动”向“认知驱动”转变的建模范式，研究如何引入语义理解与推理机制以增强跟踪器对目标身份的判别能力，从而实现更鲁棒与智能的目标跟踪。
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+## 多模态大模型认知推理
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+聚焦垂直领域大模型构建与知识迁移机制，重点研究多模态大模型的认知推理能力及其结构化建模方法，探索该能力在视觉理解任务中的应用，包括目标跟踪与目标检测等场景，推动大模型从通用理解向任务驱动的智能决策能力演进。
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-</div>
-</div>
+<span class='anchor' id='publications'></span>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+# 学术成果
 
-# 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+1. **Y. Wang**, S. Hu, S. Jia, et al. *SOIBench: A Benchmark for Similar Object Interference in Single Object Tracking*. ECCV 2026 (CCF-B), 在投。
+2. **Y. Wang**, Y. Cao, S. Hu, et al. *ForestGPT: A Teaching-Inspired Large Language Model Ecosystem for Forestry*. EAAI (中科院一区, IF=8.0), 一审阶段。
+3. J. Jia, **Y. Wang**, Y. Li, et al. *LEARN: Knowledge Adaptation from Large Language Model to Recommendation for Practical Industrial Application*. **AAAI 2025**.
+4. X. Zhao, S. Hu, **Y. Wang**, et al. *BioDrone: A Bionic Drone-based Single Object Tracking Benchmark for Robust Vision*. **IJCV**, 132(5), 1659-1684.
+5. **Y. Wang**, S. Hu, X. Zhao. *Rethinking Similar Object Interference in Single Object Tracking*. **CSAI 2023**.
+6. Y. Wang, J. Zhang, **Y. Wang**, et al. *Improved SAR Aircraft Detection Algorithm Based on Visual State Space Models*. *IET Computer Vision*, 19(1), e70032, 2025.
 
-# 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+<span class='anchor' id='education'></span>
 
-# 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
+# 教育背景
 
-# 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+- **东南大学 自动化学院**，博士在读，2024.09 至今
+  导师：黄卫院士、路小波教授
+- **东南大学 仪器科学与工程学院**，工学硕士，2021.09 - 2024.06
+- **郑州大学 电气工程学院**，工学学士，2017.09 - 2021.06
+
+<span class='anchor' id='internships'></span>
+
+# 实习经历
+
+- **南京恩博科技有限公司**，算法实习｜垂类大模型研发，2024.06 - 2025.12
+  参与垂直领域大语言模型研发流程，涵盖数据采集与清洗、指令数据构建、监督微调（SFT）及评估评测，推动模型在特定场景下的能力优化与应用落地。
+- **南京新一代人工智能研究院有限公司**，研发实习｜大模型评测，2024.11 - 2025.03
+  参与大模型交付与实施标准的调研与制定。
+- **快手商业化算法部 / 创意智能组**，算法实习｜基于大语言模型的推荐系统研究，2023.08 - 2024.04
+  研究大语言模型蕴含的世界知识与推荐系统任务域的协同方式，提出 LLM 驱动的知识侧自适应推荐框架 LEARN。
+- **中国科学院自动化研究所**，科研实习｜视觉目标跟踪，2022.09 - 2024.06
+  参与仿生无人机目标跟踪基准 BioDrone 的构建与评测研究，开展单目标跟踪任务中相似物体干扰问题的分析与基准构建。
+
+<span class='anchor' id='skills'></span>
+
+# 技术能力
+
+- **编程语言**：Python，C++，Java，Shell
+- **深度学习框架**：PyTorch，Transformers，Swift，vLLM
+- **计算机视觉**：目标检测、目标跟踪、多模态理解
+- **大模型训练**：熟悉 SFT、GRPO、LoRA 等训练与高效微调方法
