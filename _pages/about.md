@@ -32,10 +32,10 @@ redirect_from:
 
 1. **Y. Wang**, S. Hu, S. Jia, et al. *SOIBench: A Benchmark for Similar Object Interference in Single Object Tracking*. ECCV 2026 (CCF-B), 在投。
 2. **Y. Wang**, Y. Cao, S. Hu, et al. *ForestGPT: A Teaching-Inspired Large Language Model Ecosystem for Forestry*. EAAI (中科院一区, IF=8.0), 一审阶段。
-3. J. Jia, **Y. Wang**, Y. Li, et al. *LEARN: Knowledge Adaptation from Large Language Model to Recommendation for Practical Industrial Application*. **AAAI 2025**.
-4. X. Zhao, S. Hu, **Y. Wang**, et al. *BioDrone: A Bionic Drone-based Single Object Tracking Benchmark for Robust Vision*. **IJCV**, 132(5), 1659-1684.
-5. **Y. Wang**, S. Hu, X. Zhao. *Rethinking Similar Object Interference in Single Object Tracking*. **CSAI 2023**.
-6. Y. Wang, J. Zhang, **Y. Wang**, et al. *Improved SAR Aircraft Detection Algorithm Based on Visual State Space Models*. *IET Computer Vision*, 19(1), e70032, 2025.
+3. J. Jia, **Y. Wang**, Y. Li, et al. *LEARN: Knowledge Adaptation from Large Language Model to Recommendation for Practical Industrial Application*. **AAAI 2025**. <span class='show_paper_citations' data-title='LEARN: Knowledge Adaptation from Large Language Model to Recommendation for Practical Industrial Application'></span>
+4. X. Zhao, S. Hu, **Y. Wang**, et al. *BioDrone: A Bionic Drone-based Single Object Tracking Benchmark for Robust Vision*. **IJCV**, 132(5), 1659-1684. <span class='show_paper_citations' data-title='BioDrone: A Bionic Drone-based Single Object Tracking Benchmark for Robust Vision'></span>
+5. **Y. Wang**, S. Hu, X. Zhao. *Rethinking Similar Object Interference in Single Object Tracking*. **CSAI 2023**. <span class='show_paper_citations' data-title='Rethinking Similar Object Interference in Single Object Tracking'></span>
+6. Y. Wang, J. Zhang, **Y. Wang**, et al. *Improved SAR Aircraft Detection Algorithm Based on Visual State Space Models*. *IET Computer Vision*, 19(1), e70032, 2025. <span class='show_paper_citations' data-title='Improved SAR Aircraft Detection Algorithm Based on Visual State Space Models'></span>
 
 <span class='anchor' id='education'></span>
 

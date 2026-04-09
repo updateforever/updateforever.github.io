@@ -1,5 +1,11 @@
 <script>
     $(document).ready(function () {
+        function normalizeTitle(title) {
+            return (title || "")
+                .toLowerCase()
+                .replace(/[\s\.,:;!?'"()\-_/]+/g, "");
+        }
+
         {% if site.google_scholar_stats_use_cdn %}
         var gsDataBaseUrl = 'https://cdn.jsdelivr.net/gh/{{ site.repository }}@'
         {% else %}
@@ -7,12 +13,37 @@
         {% endif %}
         $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
             var totalCitation = data['citedby']
-            document.getElementById('total_cit').innerHTML = totalCitation;
+            var totalCitationEle = document.getElementById('total_cit');
+            if (totalCitationEle) {
+                totalCitationEle.innerHTML = totalCitation;
+            }
+
+            var publications = data['publications'] || {}
+            var publicationTitleMap = {}
+            Object.keys(publications).forEach(function (paperId) {
+                var publication = publications[paperId] || {}
+                var bib = publication['bib'] || {}
+                var normalizedTitle = normalizeTitle(bib['title'])
+                if (normalizedTitle) {
+                    publicationTitleMap[normalizedTitle] = publication
+                }
+            })
+
             var citationEles = document.getElementsByClassName('show_paper_citations')
             Array.prototype.forEach.call(citationEles, element => {
                 var paperId = element.getAttribute('data')
-                var numCitations = data['publications'][paperId]['num_citations']
-                element.innerHTML = '| Citations: ' + numCitations;
+                var paperTitle = normalizeTitle(element.getAttribute('data-title'))
+                var publication = null
+
+                if (paperId && publications[paperId]) {
+                    publication = publications[paperId]
+                } else if (paperTitle && publicationTitleMap[paperTitle]) {
+                    publication = publicationTitleMap[paperTitle]
+                }
+
+                if (publication && publication['num_citations'] !== undefined) {
+                    element.innerHTML = '| Citations: ' + publication['num_citations'];
+                }
             });
         });
     })
